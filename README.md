@@ -1,1 +1,1 @@
-# llamaindex_study
+- 공식 document링크: https://docs.llamaindex.ai/en/stable/#introduction
