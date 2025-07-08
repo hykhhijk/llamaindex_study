@@ -1,6 +1,7 @@
 # dataset
 *data/
 *.csv
+*/chroma*/
 
 # Virtual environments
 .venv/
