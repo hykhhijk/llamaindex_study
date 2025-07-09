@@ -1522,6 +1522,15 @@ wheels = [
 ]
 
 [[package]]
+name = "jsonpickle"
+version = "4.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e4/a6/d07afcfdef402900229bcca795f80506b207af13a838d4d99ad45abf530c/jsonpickle-4.1.1.tar.gz", hash = "sha256:f86e18f13e2b96c1c1eede0b7b90095bbb61d99fedc14813c44dc2f361dbbae1", size = 316885, upload-time = "2025-06-02T20:36:11.57Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/73/04df8a6fa66d43a9fd45c30f283cc4afff17da671886e451d52af60bdc7e/jsonpickle-4.1.1-py3-none-any.whl", hash = "sha256:bb141da6057898aa2438ff268362b126826c812a1721e31cf08a6e142910dc91", size = 47125, upload-time = "2025-06-02T20:36:08.647Z" },
+]
+
+[[package]]
 name = "jsonpointer"
 version = "3.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1985,6 +1994,19 @@ wheels = [
 ]
 
 [[package]]
+name = "llama-index-utils-workflow"
+version = "0.3.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "llama-index-core" },
+    { name = "pyvis" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/93/64/7a524ceea0630c9c18a09d78ad4cf614b21c5d5df149b3e37f9ff07fc3c5/llama_index_utils_workflow-0.3.5.tar.gz", hash = "sha256:70ccd4ebd6d1b430abae6ac0e588c05b68ae9832d6bfeaa917eaf391c539bc53", size = 8070, upload-time = "2025-06-20T14:42:37.365Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/47/1c/d2907f28c0b15956178a127c5cb550b68cd3965b7adc55c798dee1e70dd4/llama_index_utils_workflow-0.3.5-py3-none-any.whl", hash = "sha256:2cf1dc101cc4d098c01d6e55f8dd9e475e2fe8e8ec5069cee12b9ab7a03d9f0a", size = 7720, upload-time = "2025-06-20T14:42:36.337Z" },
+]
+
+[[package]]
 name = "llama-index-vector-stores-chroma"
 version = "0.4.2"
 source = { registry = "https://pypi.org/simple" }
@@ -2062,6 +2084,7 @@ dependencies = [
     { name = "llama-index-embeddings-huggingface" },
     { name = "llama-index-llms-gemini" },
     { name = "llama-index-llms-huggingface-api" },
+    { name = "llama-index-utils-workflow" },
     { name = "llama-index-vector-stores-chroma" },
     { name = "llama-index-vector-stores-pinecone" },
     { name = "llama-index-vector-stores-qdrant" },
@@ -2080,6 +2103,7 @@ requires-dist = [
     { name = "llama-index-embeddings-huggingface", specifier = ">=0.5.5" },
     { name = "llama-index-llms-gemini", specifier = ">=0.5.0" },
     { name = "llama-index-llms-huggingface-api", specifier = ">=0.5.0" },
+    { name = "llama-index-utils-workflow", specifier = ">=0.3.5" },
     { name = "llama-index-vector-stores-chroma", specifier = ">=0.4.2" },
     { name = "llama-index-vector-stores-pinecone", specifier = ">=0.6.0" },
     { name = "llama-index-vector-stores-qdrant", specifier = ">=0.6.1" },
@@ -3749,6 +3773,22 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f8/bf/abbd3cdfb8fbc7fb3d4d38d320f2441b1e7cbe29be4f23797b4a2b5d8aac/pytz-2025.2.tar.gz", hash = "sha256:360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3", size = 320884, upload-time = "2025-03-25T02:25:00.538Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/81/c4/34e93fe5f5429d7570ec1fa436f1986fb1f00c3e0f43a589fe2bbcd22c3f/pytz-2025.2-py2.py3-none-any.whl", hash = "sha256:5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00", size = 509225, upload-time = "2025-03-25T02:24:58.468Z" },
+]
+
+[[package]]
+name = "pyvis"
+version = "0.3.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "ipython", version = "8.37.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "ipython", version = "9.4.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "jinja2" },
+    { name = "jsonpickle" },
+    { name = "networkx", version = "3.4.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "networkx", version = "3.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ab/4b/e37e4e5d5ee1179694917b445768bdbfb084f5a59ecd38089d3413d4c70f/pyvis-0.3.2-py3-none-any.whl", hash = "sha256:5720c4ca8161dc5d9ab352015723abb7a8bb8fb443edeb07f7a322db34a97555", size = 756038, upload-time = "2023-02-24T20:29:46.758Z" },
 ]
 
 [[package]]
